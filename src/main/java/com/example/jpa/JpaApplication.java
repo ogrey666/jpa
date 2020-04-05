@@ -11,3 +11,8 @@ public class JpaApplication {
 	}
 
 }
+
+/*
+	JPA Query Creation Methods
+	https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation
+ */
