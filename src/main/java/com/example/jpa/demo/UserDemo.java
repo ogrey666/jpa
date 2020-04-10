@@ -29,7 +29,7 @@ public class UserDemo {
         this.transactionTemplate = transactionTemplate;
     }
 
-    @Bean
+//    @Bean
     public CommandLineRunner userDemoBean(UserRepository userRepository) {
         return args -> {
             userRepository.save(new User("jon", 10, 1, "jon@email.com", LocalDateTime.now().minusDays(ThreadLocalRandom.current().nextLong(10))));

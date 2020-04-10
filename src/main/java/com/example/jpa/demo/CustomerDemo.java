@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class CustomerDemo {
 
-    @Bean
+//    @Bean
     public CommandLineRunner customerDemoBean(CustomerRepository customerRepository) {
         return args -> {
             customerRepository.save(new Customer("Jan", "Pies"));
