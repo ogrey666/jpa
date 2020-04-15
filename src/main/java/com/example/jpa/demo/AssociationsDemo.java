@@ -44,6 +44,7 @@ public class AssociationsDemo {
 //                product.setStores(Collections.singleton(store));
                 entityManager.persist(product);
                 System.out.println(product);
+                entityManager.find(Product.class, 1L); // niskopoziomowa metoda do wyszukiwania encji po ID
                 return product;
             });
 

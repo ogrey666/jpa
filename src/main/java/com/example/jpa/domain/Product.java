@@ -10,7 +10,7 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(
             name = "store_product",
             joinColumns = { @JoinColumn(name = "fk_store")},
